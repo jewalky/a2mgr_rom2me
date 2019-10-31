@@ -1,0 +1,7 @@
+Release
+*.user
+*.suo
+*.ncb
+postbuild/data
+postbuild/rom2me.dll
+postbuild/rom2me.exe

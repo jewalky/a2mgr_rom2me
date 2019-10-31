@@ -1,0 +1,26 @@
+LIBRARY rom2me
+EXPORTS
+
+imp_RemoveResRequirement	@1 NONAME
+imp_AddResFromData			@2 NONAME
+imp_RemoveResRequirement2	@3 NONAME
+imp_LoadLocaleText			@4 NONAME
+imp_32Bit_Check				@5 NONAME
+imp_32Bit_DrawTile1			@6 NONAME
+imp_32Bit_DrawTile2			@7 NONAME
+imp_32Bit_DrawTile3			@8 NONAME
+imp_32Bit_DrawTile4			@9 NONAME
+imp_32Bit_DrawTile5			@10 NONAME
+imp_32Bit_DrawTile6			@11 NONAME
+imp_32Bit_DrawLine1			@12 NONAME
+imp_32Bit_DrawLine2			@13 NONAME
+imp_32Bit_DrawLine3			@14 NONAME
+imp_32Bit_Draw256			@15 NONAME
+imp_32Bit_Draw256B			@16 NONAME
+imp_32Bit_Draw256B2			@17 NONAME
+imp_32Bit_Draw256Shadow		@18 NONAME
+imp_32Bit_Draw16			@19 NONAME
+imp_32Bit_DrawMiniMap		@20 NONAME
+imp_32Bit_UnitPreview1		@21 NONAME
+imp_32Bit_UnitPreview2		@22 NONAME
+imp_32Bit_UnitPreview3		@23 NONAME

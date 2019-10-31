@@ -1,0 +1,38 @@
+EXECUTABLE rom2me.exe
+MODULE rom2me.dll
+
+JMP 1 004182A2 // hack res check 1
+JMP 2 004300C0 // load resources from data
+JMP 3 004183A0 // hack res check 2
+JMP 4 004184F2 // load locale
+
+JMP 5 004063BA // 32-bit: check for color space
+
+JMP 6 004084D3 // 32-bit: draw tile 1 (non-square)
+JMP 7 0040861C // 32-bit: draw tile 2 (non-square)
+JMP 8 004086D8 // 32-bit: draw tile 3 (non-square)
+
+JMP 9 00408330 // 32-bit: draw tile 4 (square)
+JMP 10 004083CF // 32-bit: draw tile 5 (square)
+JMP 11 004083F0 // 32-bit: draw tile 6 (square)
+
+JMP 12 00408154 // 32-bit: draw line 1 (start point)
+JMP 13 0040822E // 32-bit: draw line 2 (vertical)
+JMP 14 004081C8 // 32-bit: draw line 3 (horizontal)
+
+JMP 15 00407600 // 32-bit: draw .256 sprite
+JMP 15 00406C80 // 32-bit: draw .256 sprite
+JMP 16 00407AB0 // 32-bit: draw .256 sprite
+JMP 16 004070F0 // 32-bit: draw .256 sprite
+JMP 17 00407860 // 32-bit: draw .256 sprite
+JMP 17 00406EC0 // 32-bit: draw .256 sprite
+JMP 18 00407CF0 // 32-bit: draw .256 sprite (shadow)
+JMP 18 00407310 // 32-bit: draw .256 sprite (shadow)
+
+JMP 19 00406A10 // 32-bit: draw .16 sprite (font2)
+
+JMP 20 00406510 // 32-bit: draw BMP (minimap)
+
+JMP 21 00403160 // 32-bit: unit preview window 1
+JMP 22 0040319A // 32-bit: unit preview window 2
+JMP 23 004031BF // 32-bit: unit preview window 3 - background color
