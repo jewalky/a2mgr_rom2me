@@ -672,7 +672,7 @@ void __stdcall DrawMiniMap(int x, int y, int in_x, int in_y, int in_w, int in_h,
 	for (int iy = 0; iy < in_h; iy++)
 	{
 		unsigned long* buf = (unsigned long*)(DDTerrainBuffer + (iy+y)*DDRowByteWidth + x*4);
-		unsigned short* pixelbuf = pixels+(iy+in_y)*w+in_x;
+		unsigned short* pixelbuf = pixels+(h-(iy+in_y)-1)*w+in_x;
 		for (int ix = 0; ix < in_w; ix++)
 		{
 			if (x+ix >= DDLeft && x+ix < DDRight && in_x+ix >= 0 && in_x+ix < w)
